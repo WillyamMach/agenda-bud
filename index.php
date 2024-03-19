@@ -8,23 +8,23 @@
 </head>
 <body>
     <form action="">
-        <label>Nome</label>
+        <label>Nome *</label>
         <input type="text"/>
 
-        <label>Endereço</label>
+        <label>Endereço *</label>
         <input type="text"/>
 
-        <label>Cidade</label>
+        <label>Cidade *</label>
         <input type="text"/>
 
-        <label>Estado</label>
+        <label>Estado *</label>
         <input type="text"/>
 
-        <label>E-mail</label>
+        <label>E-mail *</label>
         <input type="email"/>
 
-        <label>Telefone</label>
-        <input type="number"/>
+        <label>Telefone *</label>
+        <input type="number/>
 
     </form>
 </body>

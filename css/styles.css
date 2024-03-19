@@ -7,26 +7,57 @@ body {
 }
 
 .dadosInputDiv {
-    width: 50%;
+    font-family: "Open Sans", sans-serif;
+    width: 40%;
     margin: 0 auto;
     padding: 1em;
-    background: #CECECE;
+    background: #212F64;
 }
 
 .campoNome {
     width: 50%;
     margin: 20px auto;
-    color: #020202;
 }
 
 .campoNome label {
     margin: 5px 0;
     display: block;
+    color: #FEFEFE;
 }
 
 .campoNome input{
     width: 100%;
-    height: 2em;
+    height: 2.5em;
     padding: 0 10px;
+    background: #BCC5E3;
+    border: 2px solid #212F64;
+    border-radius: 8px;
+    box-shadow: 4px 4px #1C2239;
+    color: #525B7C;
+    font-size: 1em;
+    font-weight: bold;
 
+}
+
+input::placeholder {
+    color:#525B7C;
+    font-weight: 100;
+}
+
+.campoEnviar {
+    width: 20%;
+    height: 3em;
+    padding: 0 10px;
+    font-size: 1em;
+    border: 0;
+    border-radius: 10px;
+    background: #3E59BB;
+    color: #BCC5E3;
+    margin-left: 9.8em;
+    
+}
+
+.campoEnviar:hover {
+    font-weight: bold;
+    height: 3.2em;
 }
