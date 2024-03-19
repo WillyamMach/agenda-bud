@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fefefe;
+}
+
+.dadosInputDiv {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    background: #CECECE;
+}
+
+.campoNome {
+    width: 50%;
+    margin: 20px auto;
+    color: #020202;
+}
+
+.campoNome label {
+    margin: 5px 0;
+    display: block;
+}
+
+.campoNome input{
+    width: 100%;
+    height: 2em;
+    padding: 0 10px;
+
+}
