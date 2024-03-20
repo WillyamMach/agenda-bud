@@ -1,6 +1,4 @@
 <?php 
-    // require 'config.php';
-
     // class Agenda {
     //     private $mysql;
 
@@ -9,10 +7,10 @@
     //     }
 
     //     public function exibirBanco(){
-    //         $resultado = $mysql->query("SELECT nome, endereco, cidade, estado, email, telefone FROM informacoes");
+    //         $resultado = $mysql->query("SELECT id, nome, endereco, cidade, estado, email, telefone FROM informacoes");
     //         $infoDb = $resultado->fetch_all(MYSQLI_ASSOC);
 
     //         return $infoDb;
     //     }
     // }
- 
+ ?>

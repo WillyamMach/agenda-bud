@@ -3,13 +3,13 @@
     require 'functions.php';
 
     // $mysql = new Agenda();
-    // $mysql->exibirBanco();
+    // $agendaInfo->exibirBanco();
 
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -59,10 +59,6 @@
             
         <section class="agendaSection"> 
             <h2  class="agendaTitulo">Agenda</h2>
-            <div class="pesquisaAgendaDiv">
-                <label for="pesquisa"><ion-icon name="search"></ion-icon><input type="text" name="pesquisa" id="pesquisa"></label>
-
-            </div>
             <div class="agendaInfoDiv">
                 <table style="tabela">
                     <tr class="colunasTabela" >
@@ -75,16 +71,18 @@
                         <th>Editar</th>
                         <th>Remover</th>                                 
                     </tr>
+                    <?php foreach($agendaInfo as $info) ?>
                     <tr class="colunasDados">
-                        <td>will</td>
-                        <td>rua antunares</td>
-                        <td>Santa Catarina</td>
-                        <td>Sao Bento do sul</td>
-                        <td>willyamamachado@wil.com</td>
-                        <td>4798883-3333</td>
+                        <td><?php $info['nome']?></td>
+                        <td><?php $info['endereco']?></td>
+                        <td><?php $info['cidade']?></td>
+                        <td><?php $info['estado']?></td>
+                        <td><?php $info['email']?></td>
+                        <td><?php $info['telefone']?></td>
                         <td><button class="botaoEditar">Editar</button></td>
                         <td><button class="botaoRemover">Remover</button></td>            
                     </tr>
+
                     <tr class="designColuna colunasDados">
                         <td>will</td>
                         <td>rua antunares</td>
