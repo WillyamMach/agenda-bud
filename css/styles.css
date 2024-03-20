@@ -3,23 +3,34 @@
     padding: 0;
 }
 body {
-    background: #CCC;
+    background: #354CA0;
 }
 
-.layout{
-    flex-wrap: wrap;
+.layout {
+    position: relative;
+    margin: 1em 0;
+}
+
+.layout h1{
+    color: #FEFEFE;
+    text-align: center;
+    font-size: 2em;
 }
 
 .dadosInputSection {
+    margin: 1em 1em;
     font-family: "Open Sans", sans-serif;
-    width: 40%;
+    width: 25%;
+    height: 39em;
     padding: 1em;
     background: #212F64;
-    border: 4px solid #1C2239;
+    border: 4px solid #182349;
+    border-radius: 8px;
+    position: absolute;
 }
 
 .campoNome {
-    width: 50%;
+    width: 60%;
     margin: 20px auto;
 }
 
@@ -36,7 +47,7 @@ body {
     background: #BCC5E3;
     border: 2px solid #212F64;
     border-radius: 8px;
-    box-shadow: 4px 4px #1C2239;
+    box-shadow: 4px 4px 2px #1C2239;
     color: #3d435a;
     font-size: 1em;
     font-weight: bold;
@@ -49,7 +60,7 @@ input::placeholder {
     font-weight: 100;
 }
 
-.campoEnviar {
+.campoSalvar {
     width: 20%;
     height: 3em;
     padding: 0 10px;
@@ -58,20 +69,115 @@ input::placeholder {
     border-radius: 10px;
     background: #1C2239;
     color: #BCC5E3;
-    margin: 5px 0 1em 23em;
-    font-weight: bold;
-    
+    margin: 5px 0 1em 17.7em;
+    font-weight: bold; 
 }
 
-.campoEnviar:hover {
+.campoSalvar:hover {
     height: 3.2em;
     background: #15192b;
 }
 
 .agendaSection {
+    position: absolute;
+    margin: 1em 0;
+    right: 1em;
     font-family: "Open Sans", sans-serif;
-    width: 40%;
+    width: 68%;
     padding: 1em;
     background: #212F64;
-    border: 4px solid #1C2239;
+    border: 4px solid #182349;
+    border-radius: 8px;
+}
+
+.agendaTitulo {
+    color: #FEFEFE;
+    font-size: 4em;
+    margin: 0 0 0.4em 0;
+    text-align: center;
+}
+
+.pesquisaAgendaDiv {
+    width: 100%;
+    text-align: left;
+    margin: 1em 4em;
+    display: inline;
+}
+
+.pesquisaAgendaDiv input {
+    width: 40%;
+    padding: 10px 10px;
+    border: 3px solid #273875;
+    border-radius: 10px 3px 20px 5px;
+}
+
+ion-icon {
+    color: #FEFEFE;
+    font-size: 2em;
+  }
+
+table {
+    width: 100%;
+    
+}
+
+.agendaInfoDiv {
+    width: 95%;
+    height: 26.8em;
+    margin: 1em auto;
+    background: #BCC5E3;
+    border: 3px solid #212F64;
+    border-radius: 8px;
+    overflow-y: scroll;
+    max-height: 26.8em;
+}
+
+.colunasTabela {
+    color: #3d435a;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+table, th, td {
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+
+.botaoEditar {
+    background: #102061;
+    border: 0;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8px;
+    padding: 2px 6px;
+    margin: 0 7px;
+}
+
+.botaoRemover {
+    background: rgb(251, 3, 3);
+    border: 0;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 8px;
+    padding: 2px 6px;
+    margin: 0 5px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #CECECE;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
