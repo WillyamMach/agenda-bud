@@ -60,19 +60,30 @@
         <section class="agendaSection"> 
             <h2  class="agendaTitulo">Agenda</h2>
             <div class="pesquisaAgendaDiv">
-                <label for="pesquisa"><ion-icon name="search"></ion-icon></label>
-                <input type="text" name="pesquisa" id="pesquisa">
+                <label for="pesquisa"><ion-icon name="search"></ion-icon><input type="text" name="pesquisa" id="pesquisa"></label>
+
             </div>
             <div class="agendaInfoDiv">
-                <table style="designColuna tabela">
-                    <tr class="designColuna colunasTabela" >
-                        <th >Nome</th>
-                        <th >Endereço</th>
-                        <th >Estado</th>
-                        <th >Cidade</th>
-                        <th >E-mail</th>
-                        <th >Telefone</th> 
-                                                                  
+                <table style="tabela">
+                    <tr class="colunasTabela" >
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Estado</th>
+                        <th>Cidade</th>
+                        <th>E-mail</th>
+                        <th>Telefone</th> 
+                        <th>Editar</th>
+                        <th>Remover</th>                                 
+                    </tr>
+                    <tr class="colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
                     </tr>
                     <tr class="designColuna colunasDados">
                         <td>will</td>
@@ -84,11 +95,192 @@
                         <td><button class="botaoEditar">Editar</button></td>
                         <td><button class="botaoRemover">Remover</button></td>            
                     </tr>
-                    <tr class="colunasDados">
+                    <tr class="designColuna colunasDados">
                         <td>will</td>
                         <td>rua antunares</td>
                         <td>Santa Catarina</td>
                         <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
+                        <td>4798883-3333</td>
+                        <td><button class="botaoEditar">Editar</button></td>
+                        <td><button class="botaoRemover">Remover</button></td>            
+                    </tr>
+                    <tr class="designColuna colunasDados">
+                        <td>will</td>
+                        <td>rua antunares</td>
+                        <td>Santa Catarina</td>
+                        <td>Sao Bento do sul</td>
+                        <td>willyamamachado@wil.com</td>
                         <td>4798883-3333</td>
                         <td><button class="botaoEditar">Editar</button></td>
                         <td><button class="botaoRemover">Remover</button></td>            

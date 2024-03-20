@@ -81,6 +81,7 @@ input::placeholder {
 .agendaSection {
     position: absolute;
     margin: 1em 0;
+    height: 39em;
     right: 1em;
     font-family: "Open Sans", sans-serif;
     width: 68%;
@@ -105,15 +106,16 @@ input::placeholder {
 }
 
 .pesquisaAgendaDiv input {
-    width: 40%;
-    padding: 10px 10px;
+    width: 30%;
+    margin: 0 10px;
+    padding: 12px 10px;
     border: 3px solid #273875;
     border-radius: 10px 3px 20px 5px;
 }
 
 ion-icon {
     color: #FEFEFE;
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
 table {
@@ -126,44 +128,63 @@ table {
     height: 26.8em;
     margin: 1em auto;
     background: #BCC5E3;
-    border: 3px solid #212F64;
     border-radius: 8px;
     overflow-y: scroll;
     max-height: 26.8em;
+    box-shadow: 10px 8px 5px#1C2239;
 }
 
 .colunasTabela {
     color: #3d435a;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 table, th, td {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #AEB7D3;
     border-collapse: collapse;
 }
 
+th, td {
+    height: 2.4em;
+}
 
 
 .botaoEditar {
-    background: #102061;
+    background: #BCC5E3;
     border: 0;
-    color: white;
+    color: #102061;
     font-size: 1.1em;
     border-radius: 8px;
     padding: 2px 6px;
     margin: 0 7px;
+    width: 5em;
+    height: 35px;
+    font-weight: bold;
+}
+
+.botaoEditar:hover {
+    background: #102061;
+    color: #FDFDFD;
 }
 
 .botaoRemover {
-    background: rgb(251, 3, 3);
+    background: #BCC5E3;
     border: 0;
-    color: white;
+    color: #e20202;
     font-size: 1.1em;
     border-radius: 8px;
     padding: 2px 6px;
     margin: 0 5px;
+    width: 5em;
+    height: 35px;
+    font-weight: bold;
+}
+
+.botaoRemover:hover {
+    background: #F20505;
+    color: #FEFEFE;
 }
 
 ::-webkit-scrollbar {
