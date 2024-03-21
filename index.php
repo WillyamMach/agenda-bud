@@ -25,28 +25,28 @@
         <section class="dadosInputSection">
             <form action="redirecionar.php" method="POST">
                 <div class="campoNome">
-                    <label>Nome *</label>
-                    <input type="text" name="nome" placeholder="Seu Nome" required/>
+                    <label for="nome">Nome *</label>
+                    <input type="text" name="nome" id="nome" placeholder="Seu Nome" required/>
                 </div>
                 <div class="campoNome">
-                    <label>Endereço *</label>
-                    <input type="text" name="endereco" placeholder="Seu Endereço" required/>
+                    <label for="endereco">Endereço *</label>
+                    <input type="text" name="endereco" id="endereco" placeholder="Seu Endereço" required/>
                 </div>
                 <div class="campoNome">
-                    <label>Cidade *</label>
-                    <input type="text" name="cidade" placeholder="Sua Cidade" required/>
+                    <label for="cidade">Cidade *</label>
+                    <input type="text" name="cidade" id="cidade" placeholder="Sua Cidade" required/>
                 </div>  
                 <div class="campoNome">
-                    <label>Estado *</label>
-                    <input type="text" name="estado" placeholder="Seu Estado" required/>
+                    <label for="estado">Estado *</label>
+                    <input type="text" name="estado" id="estado" placeholder="Seu Estado" required/>
                 </div>
                 <div class="campoNome">
-                    <label>E-mail *</label>
-                    <input type="email" name="email" placeholder="exemplo@email.com" required/>
+                    <label for="email">E-mail *</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@email.com" required/>
                 </div>
                 <div class="campoNome">
-                    <label for="">Telefone *</label>
-                    <input type="tel" name="telefone" placeholder="99 99999-9999" required/>
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="99 99999-9999" required/>
                 </div>
                 <input class="campoSalvar" type="submit" value="Salvar">
             </form>
@@ -75,8 +75,8 @@
                         <td class="colunasDados"><?php echo $info['inf_telefone']?></td>
                         <td class="colunasDados"><input type="submit" name="edita" value="Editar" class="botaoEditar"></td>
                         <form action="deleta.php" method="POST">
-                            <td class="colunasDados"><input type="submit" name="remove" value="Remover" id="<?php echo $info['inf_id'];?>" class="botaoRemover"/></td> 
-                        </form>      
+                            <td class="colunasDados"><input type="submit" name="remove" value="Remover" class="botaoRemover"/></td> 
+                        </form> 
                     </tr>
                     <?php endforeach ?>
                 </table>
