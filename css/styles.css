@@ -105,6 +105,7 @@ table {
 }
 
 .agendaInfoDiv {
+    border: 1px solid #FEFEFE;
     width: 85%;
     height: 26.8em;
     margin: 2.5em auto;
@@ -191,13 +192,14 @@ th, td {
 }
 
 ::-webkit-scrollbar-track {
-    background: #CECECE;
+    background: #FDFDFD;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #5C6383;
+    border-radius: 14px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: #383C50;
 }
