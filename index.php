@@ -73,10 +73,10 @@
                         <td class="colunasDados"><?php echo $info['inf_estado']?></td>
                         <td class="colunasDados"><?php echo $info['inf_email']?></td>
                         <td class="colunasDados"><?php echo $info['inf_telefone']?></td>
-                        <form active="deleta.php" method="GET" >
-                            <td class="colunasDados"><input type="submit" name="edita" value="Editar" class="botaoEditar"></td>
-                            <td class="colunasDados"><input type="submit" name="remove" value="Remover" class="botaoRemover"></td> 
-                        </form>           
+                        <td class="colunasDados"><input type="submit" name="edita" value="Editar" class="botaoEditar"></td>
+                        <form action="deleta.php" method="POST">
+                            <td class="colunasDados"><input type="submit" name="remove" value="Remover" id="<?php echo $info['inf_id'];?>" class="botaoRemover"/></td> 
+                        </form>      
                     </tr>
                     <?php endforeach ?>
                 </table>

@@ -134,6 +134,10 @@ th, td {
     background: #273875;
 }
 
+.colunasId {
+    display: none;
+}
+
 .colunasDados {
     font-size: 1em;
     font-weight: bold;
