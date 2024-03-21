@@ -1,16 +1,5 @@
 <?php 
-    // class Agenda {
-    //     private $mysql;
+    $resultado = $mysql->query("SELECT inf_id, inf_nome, inf_endereco, inf_cidade, inf_estado, inf_email, inf_telefone FROM tb_informacoes");
+    $infoDb = $resultado->fetch_all(MYSQLI_ASSOC);
 
-    //     public function __construct(mysqli $mysql){
-    //         $this->mysql = $mysql;
-    //     }
-
-    //     public function exibirBanco(){
-    //         $resultado = $mysql->query("SELECT id, nome, endereco, cidade, estado, email, telefone FROM informacoes");
-    //         $infoDb = $resultado->fetch_all(MYSQLI_ASSOC);
-
-    //         return $infoDb;
-    //     }
-    // }
  ?>

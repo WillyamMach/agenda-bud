@@ -93,30 +93,10 @@ input::placeholder {
 
 .agendaTitulo {
     color: #FEFEFE;
-    font-size: 4em;
-    margin: 0 0 0.4em 0;
+    font-size: 2em;
+    margin: 0.7 0;
     text-align: center;
 }
-
-.pesquisaAgendaDiv {
-    width: 100%;
-    text-align: left;
-    margin: 1em 4em;
-    display: inline;
-}
-
-.pesquisaAgendaDiv input {
-    width: 30%;
-    margin: 0 10px;
-    padding: 12px 10px;
-    border: 3px solid #273875;
-    border-radius: 20px 5px 20px 5px;
-}
-
-ion-icon {
-    color: #FEFEFE;
-    font-size: 1.5em;
-  }
 
 table {
     width: 100%;
@@ -124,9 +104,9 @@ table {
 }
 
 .agendaInfoDiv {
-    width: 95%;
+    width: 85%;
     height: 26.8em;
-    margin: 1em auto;
+    margin: 2.5em auto;
     background: #BCC5E3;
     border-radius: 8px;
     overflow-y: scroll;
@@ -134,10 +114,8 @@ table {
     box-shadow: 10px 8px 5px#1C2239;
 }
 
-.colunasTabela {
-    color: #3d435a;
-    font-weight: bold;
-    font-size: 1.5em;
+tr:nth-child(even) {
+    background: #D9DDEA;
 }
 
 table, th, td {
@@ -150,30 +128,42 @@ th, td {
     height: 2.4em;
 }
 
+.colunasTabela {
+    color: #FEFEFE;
+    font-size: 1.1em;
+    background: #273875;
+}
+
+.colunasDados {
+    font-size: 1em;
+    font-weight: bold;
+    color: #3D435A;
+    
+}
 
 .botaoEditar {
-    background: #BCC5E3;
+    background: #102061;
     border: 0;
-    color: #102061;
-    font-size: 1.1em;
+    color: #FDFDFD;
+    font-size: 1em;
     border-radius: 8px;
     padding: 2px 6px;
-    margin: 0 7px;
+    margin: 5px 7px;
     width: 5em;
     height: 35px;
     font-weight: bold;
 }
 
 .botaoEditar:hover {
-    background: #102061;
+    background: #0c194b;
     color: #FDFDFD;
 }
 
 .botaoRemover {
-    background: #BCC5E3;
+    background: #c41f1f;
     border: 0;
-    color: #e20202;
-    font-size: 1.1em;
+    color: #FEFEFE;
+    font-size: 1em;
     border-radius: 8px;
     padding: 2px 6px;
     margin: 0 5px;
@@ -183,7 +173,7 @@ th, td {
 }
 
 .botaoRemover:hover {
-    background: #F20505;
+    background: #F10000;
     color: #FEFEFE;
 }
 
