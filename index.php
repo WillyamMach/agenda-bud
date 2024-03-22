@@ -4,8 +4,6 @@
     require 'editarDados.php';
     require 'inserirDados.php';
     require 'deletarDados.php';
-
-    echo get_include_path();
     
 ?>
 

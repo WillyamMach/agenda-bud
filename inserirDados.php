@@ -1,5 +1,5 @@
 <?php 
-    require 'config.php';
+    include 'config.php';
 
     if($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = $_POST['id'];
@@ -14,7 +14,7 @@
         $resultado = $mysql->prepare($inserirDados);
         $resultado->execute();      
 
-        header("Location: index.php");     
+        header("Location: ../index.php");     
 
     }
 
