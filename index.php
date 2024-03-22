@@ -12,7 +12,7 @@
 
     if(isset($_GET['id'])){
         $id = $_GET['id'];
-
+        
         foreach($infoDb as $info){
             $nome = $info['inf_nome'];
             $endereco = $info['inf_endereco'];
@@ -98,14 +98,7 @@
                         <td class="colunasDados"><?php echo $info['inf_email']?></td>
                         <td class="colunasDados"><?php echo $info['inf_telefone']?></td>
                         <td class="colunasDados">
-                            <input type="hidden" name="id" value="<?php echo $info['inf_id']?>">
-                            <input type="hidden" name="nome" value="<?php echo $info['inf_nome']?>">
-                            <input type="hidden" name="endereco" value="<?php echo $info['inf_endereco']?>">
-                            <input type="hidden" name="cidade" value="<?php echo $info['inf_cidade']?>">
-                            <input type="hidden" name="estado" value="<?php echo $info['inf_estado']?>">
-                            <input type="hidden" name="email" value="<?php echo $info['inf_email']?>">
-                            <input type="hidden" name="telefone" value="<?php echo $info['inf_telefone']?>">
-                            <a href="index.php?id=<?php echo $info['inf_id']; ?>"><button class="botaoEditar">Editar</button></a>         
+                            <a href="index.php?id=<?php echo $info['inf_id'];?>"><button class="botaoEditar">Editar</button></a>         
                         </td>    
                         <form action="deletarDados.php?id=<?php echo $info['inf_id'] ?>" method="POST" >
                             <td class="colunasDados">
