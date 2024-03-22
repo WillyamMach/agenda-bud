@@ -1,5 +1,5 @@
 <?php 
-    include 'config.php';
+    require 'config.php';
     require 'mostrarDados.php';
     require 'editarDados.php';
     require 'inserirDados.php';
