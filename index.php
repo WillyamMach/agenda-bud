@@ -1,7 +1,27 @@
 <?php 
     require 'config.php';
     require 'mostrarDados.php';
-    
+
+    $id = null;
+    $nome = null;
+    $endereco = null;
+    $cidade = null;
+    $estado = null;
+    $email = null;
+    $telefone = null;
+
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+
+        foreach($infoDb as $info){
+            $nome = $info['inf_nome'];
+            $endereco = $info['inf_endereco'];
+            $cidade = $info['inf_cidade'];
+            $estado = $info['inf_estado'];
+            $email = $info['inf_email'];
+            $telefone = $info['inf_telefone'];
+        }
+    }
 
 ?>
 
@@ -24,32 +44,32 @@
     <div class="layout">
         <section class="dadosInputSection">
                     <form action="inserirDados.php" method="POST">
-                        <?php foreach ($infoDb as $info) : ?>
-                            <input type="hidden" name="id" value="<?php echo $info['inf_id'] ?>" />
-                        <?php endforeach ?>
+                        
+                        <input type="text" name="id" value="<?php echo $id;?>" />
+                       
                         <div class="campoNome">
                             <label for="nome">Nome *</label>
-                            <input type="text" name="nome" id="nome" value="" placeholder="Seu Nome" required/>
+                            <input type="text" name="nome" id="nome" value="<?php echo $nome; ?>" placeholder="Seu Nome" required/>
                         </div>
                         <div class="campoNome">
                             <label for="endereco">Endereço *</label>
-                            <input type="text" name="endereco" id="endereco" value="" placeholder="Seu Endereço" required/>
+                            <input type="text" name="endereco" id="endereco" value="<?php echo $endereco; ?>" placeholder="Seu Endereço" required/>
                         </div>
                         <div class="campoNome">
                             <label for="cidade">Cidade *</label>
-                            <input type="text" name="cidade" id="cidade" value="" placeholder="Sua Cidade" required/>
+                            <input type="text" name="cidade" id="cidade" value="<?php echo $cidade; ?>" placeholder="Sua Cidade" required/>
                         </div>  
                         <div class="campoNome">
                             <label for="estado">Estado *</label>
-                            <input type="text" name="estado" id="estado" value="" placeholder="Seu Estado" required/>
+                            <input type="text" name="estado" id="estado" value="<?php echo $estado; ?>" placeholder="Seu Estado" required/>
                         </div>
                         <div class="campoNome">
                             <label for="email">E-mail *</label>
-                            <input type="email" name="email" id="email" value="" placeholder="exemplo@email.com" required/>
+                            <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="exemplo@email.com" required/>
                         </div>
                         <div class="campoNome">
                             <label for="telefone">Telefone *</label>
-                            <input type="tel" name="telefone" id="telefone" value="" placeholder="99 99999-9999" required/>
+                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>" placeholder="99 99999-9999" required/>
                         </div>
                         <input class="campoSalvar" type="submit" value="Salvar">
                     </form>
@@ -77,23 +97,20 @@
                         <td class="colunasDados"><?php echo $info['inf_estado']?></td>
                         <td class="colunasDados"><?php echo $info['inf_email']?></td>
                         <td class="colunasDados"><?php echo $info['inf_telefone']?></td>
-                        <form action="editarDados.php?id=<?php echo $info['inf_id'] ?>" method="post">
-                            <td class="colunasDados">
-                                <input type="hidden" name="id" value="<?php echo $info['inf_id']?>">
-                                <input type="hidden" name="nome" value="<?php echo $info['inf_nome']?>">
-                                <input type="hidden" name="endereco" value="<?php echo $info['inf_endereco']?>">
-                                <input type="hidden" name="cidade" value="<?php echo $info['inf_cidade']?>">
-                                <input type="hidden" name="estado" value="<?php echo $info['inf_estado']?>">
-                                <input type="hidden" name="email" value="<?php echo $info['inf_email']?>">
-                                <input type="hidden" name="telefone" value="<?php echo $info['inf_telefone']?>">
-                                
-                                <button class="botaoEditar">Editar</button>
-                            </td>
-                        </form>
+                        <td class="colunasDados">
+                            <input type="hidden" name="id" value="<?php echo $info['inf_id']?>">
+                            <input type="hidden" name="nome" value="<?php echo $info['inf_nome']?>">
+                            <input type="hidden" name="endereco" value="<?php echo $info['inf_endereco']?>">
+                            <input type="hidden" name="cidade" value="<?php echo $info['inf_cidade']?>">
+                            <input type="hidden" name="estado" value="<?php echo $info['inf_estado']?>">
+                            <input type="hidden" name="email" value="<?php echo $info['inf_email']?>">
+                            <input type="hidden" name="telefone" value="<?php echo $info['inf_telefone']?>">
+                            <a href="index.php?id=<?php echo $info['inf_id']; ?>"><button class="botaoEditar">Editar</button></a>         
+                        </td>    
                         <form action="deletarDados.php?id=<?php echo $info['inf_id'] ?>" method="POST" >
                             <td class="colunasDados">
-                                <input type="hidden" name="id"  value="<?php echo $info['inf_id'] ?>" />
-                                <button class="botaoRemover" onclick="return confirm('Tem certeza que deseja deletar este registro?')";>Remover</button>         
+                                <input type="hidden" name="id" value="<?php echo $info['inf_id'] ?>" />
+                                <button class="botaoRemover" onclick="return confirm('Confirmar Delete?')";>Remover</button>         
                             </td> 
                         </form> 
                     </tr>
@@ -102,7 +119,5 @@
             </div>
         </section>  
     </div>
-
-<script src="js/botaoremover.js"></script>
 </body>
 </html>
