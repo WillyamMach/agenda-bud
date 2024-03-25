@@ -45,7 +45,7 @@
 <body> 
     <div class="layout">
         <section class="dadosInputSection">
-                    <form action="editarDados.php" method="POST">                
+                    <form action="editaAtualizaDados.php" method="POST">                
                         <input type="hidden" name="id" value="<?php echo $id;?>" />
 
                         <div class="campoNome">
