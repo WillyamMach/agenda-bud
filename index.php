@@ -14,12 +14,14 @@
         $id = $_GET['id'];
         
         foreach($infoDb as $info){
-            $nome = $info['inf_nome'];
-            $endereco = $info['inf_endereco'];
-            $cidade = $info['inf_cidade'];
-            $estado = $info['inf_estado'];
-            $email = $info['inf_email'];
-            $telefone = $info['inf_telefone'];
+            if($id === $info['inf_id']){
+                $nome = $info['inf_nome'];
+                $endereco = $info['inf_endereco'];
+                $cidade = $info['inf_cidade'];
+                $estado = $info['inf_estado'];
+                $email = $info['inf_email'];
+                $telefone = $info['inf_telefone'];
+            }
         }
     }
 
@@ -43,10 +45,9 @@
 <body> 
     <div class="layout">
         <section class="dadosInputSection">
-                    <form action="inserirDados.php" method="POST">
-                        
-                        <input type="text" name="id" value="<?php echo $id;?>" />
-                       
+                    <form action="editarDados.php" method="POST">                
+                        <input type="hidden" name="id" value="<?php echo $id;?>" />
+
                         <div class="campoNome">
                             <label for="nome">Nome *</label>
                             <input type="text" name="nome" id="nome" value="<?php echo $nome; ?>" placeholder="Seu Nome" required/>
@@ -69,7 +70,7 @@
                         </div>
                         <div class="campoNome">
                             <label for="telefone">Telefone *</label>
-                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>" placeholder="99 99999-9999" required/>
+                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>" placeholder="99 99999-9999" minlength="11" maxlength="15" required/>
                         </div>
                         <input class="campoSalvar" type="submit" value="Salvar">
                     </form>
