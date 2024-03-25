@@ -5,3 +5,4 @@ function somenteNumeros(valor) {
         caractereInput.value = "";
     }
 }
+
