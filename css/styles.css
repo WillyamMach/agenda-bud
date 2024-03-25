@@ -132,7 +132,7 @@ th, td {
 
 .colunasTabela {
     color: #FEFEFE;
-    font-size: 1.1em;
+    font-size: 1.2em;
     background: #273875;
 }
 
@@ -141,9 +141,10 @@ th, td {
 }
 
 .colunasDados {
-    font-size: 1em;
+    font-size: 0.98em;
     font-weight: bold;
     color: #3D435A;
+
     
 }
 
