@@ -20,7 +20,7 @@
                 $cidade = $info['inf_cidade'];
                 $estado = $info['inf_estado'];
                 $email = $info['inf_email'];
-                $telefone = $info['inf_telefone'];
+                $telefone = $info["concat('(',substr(inf_telefone,1,2),') ',substr(inf_telefone,3,5),'-',substr(inf_telefone,8))"];
             }
         }
     }
@@ -69,8 +69,9 @@
                             <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="exemplo@email.com" required/>
                         </div>
                         <div class="campoNome">
-                            <label for="telefone">Telefone *</label>
-                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>" placeholder="99 99999-9999" minlength="11" maxlength="15" required/>
+                            <label for="telefone">Telefone *</label><label></label>
+                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>"
+                            placeholder="47999990000" onkeyup="somenteNumeros(this)" minlength="11" maxlength="18" required/>
                         </div>
                         <input class="campoSalvar" type="submit" value="Salvar">
                     </form>
@@ -97,7 +98,7 @@
                         <td class="colunasDados"><?php echo $info['inf_cidade']?></td>
                         <td class="colunasDados"><?php echo $info['inf_estado']?></td>
                         <td class="colunasDados"><?php echo $info['inf_email']?></td>
-                        <td class="colunasDados"><?php echo $info['inf_telefone']?></td>
+                        <td class="colunasDados"><?php echo $info["concat('(',substr(inf_telefone,1,2),') ',substr(inf_telefone,3,5),'-',substr(inf_telefone,8))"]?></td>
                         <td class="colunasDados">
                             <a href="index.php?id=<?php echo $info['inf_id'];?>"><button class="botaoEditar">Editar</button></a>         
                         </td>    
@@ -113,5 +114,7 @@
             </div>
         </section>  
     </div>
+
+    <script src="js/index.js"></script>
 </body>
 </html>
