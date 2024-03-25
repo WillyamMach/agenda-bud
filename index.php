@@ -71,7 +71,7 @@
                         <div class="campoNome">
                             <label for="telefone">Telefone *</label><label></label>
                             <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>"
-                            placeholder="47999990000" onkeyup="somenteNumeros(this)" minlength="11" maxlength="18" required/>
+                            placeholder="(47)99999-0000" onkeyup="somenteNumeros(this)" onkeydown="adicionarMascara()" minlength="11" maxlength="17" required/>
                         </div>
                         <input class="campoSalvar" type="submit" value="Salvar">
                     </form>
