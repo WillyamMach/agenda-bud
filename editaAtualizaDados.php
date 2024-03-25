@@ -9,18 +9,21 @@
         $estado = $_POST['estado'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
+        $telefoneMask = str_replace(array("-", "(", ")", " ", "a"), '', $telefone);
+
+        var_dump($telefoneMask);
         
         // reaproveitando o POST para utilizar update e insert
         if($id){
             $query = ("UPDATE tb_informacoes SET inf_nome = '$nome', inf_endereco = '$endereco', inf_cidade = '$cidade', inf_estado = '$estado', inf_email = '$email', inf_telefone = '$telefone' WHERE inf_id = $id");
         } else { 
-            $query = ("INSERT INTO tb_informacoes (inf_nome, inf_endereco, inf_cidade, inf_estado, inf_email, inf_telefone) VALUES ('$nome', '$endereco', '$cidade', '$estado', '$email', $telefone)");
+            $query = ("INSERT INTO tb_informacoes (inf_nome, inf_endereco, inf_cidade, inf_estado, inf_email, inf_telefone) VALUES ('$nome', '$endereco', '$cidade', '$estado', '$email', $telefoneMask)");
         }
 
-    $resultado = $mysql->prepare($query);
-    $resultado->execute();  
+        $resultado = $mysql->prepare($query);
+        $resultado->execute();  
 
-    header("Location: index.php");
+        header("Location: index.php");
 
     }
 ?>
