@@ -45,36 +45,36 @@
 <body> 
     <div class="layout">
         <section class="dadosInputSection">
-                    <form action="editaAtualizaDados.php" method="POST">                
-                        <input type="hidden" name="id" value="<?php echo $id;?>" />
+            <form action="editaAtualizaDados.php" method="POST">                
+                <input type="hidden" name="id" value="<?php echo $id;?>" />
 
-                        <div class="campoNome">
-                            <label for="nome">Nome *</label>
-                            <input type="text" name="nome" id="nome" value="<?php echo $nome; ?>" placeholder="Seu Nome" required/>
-                        </div>
-                        <div class="campoNome">
-                            <label for="endereco">Endereço *</label>
-                            <input type="text" name="endereco" id="endereco" value="<?php echo $endereco; ?>" placeholder="Seu Endereço" required/>
-                        </div>
-                        <div class="campoNome">
-                            <label for="cidade">Cidade *</label>
-                            <input type="text" name="cidade" id="cidade" value="<?php echo $cidade; ?>" placeholder="Sua Cidade" required/>
-                        </div>  
-                        <div class="campoNome">
-                            <label for="estado">Estado *</label>
-                            <input type="text" name="estado" id="estado" value="<?php echo $estado; ?>" placeholder="Seu Estado" required/>
-                        </div>
-                        <div class="campoNome">
-                            <label for="email">E-mail *</label>
-                            <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="exemplo@email.com" required/>
-                        </div>
-                        <div class="campoNome">
-                            <label for="telefone">Telefone *</label><label></label>
-                            <input type="tel" name="telefone" id="telefone" value="<?php echo $telefone; ?>"
-                            placeholder="(47)99999-0000" onkeyup="somenteNumeros(this)" onkeydown="adicionarMascara()" minlength="11" maxlength="17" required/>
-                        </div>
-                        <input class="campoSalvar" type="submit" value="Salvar">
-                    </form>
+                <div class="campoNome">
+                    <label for="nome">Nome *</label>
+                    <input type="text" name="nome" id="nome" value="<?php echo $nome; ?>" placeholder="Seu Nome" required/>
+                </div>
+                <div class="campoNome">
+                    <label for="endereco">Endereço *</label>
+                    <input type="text" name="endereco" id="endereco" value="<?php echo $endereco; ?>" placeholder="Seu Endereço" required/>
+                </div>
+                <div class="campoNome">
+                    <label for="cidade">Cidade *</label>
+                    <input type="text" name="cidade" id="cidade" value="<?php echo $cidade; ?>" placeholder="Sua Cidade" required/>
+                </div>  
+                <div class="campoNome">
+                    <label for="estado">Estado *</label>
+                    <input type="text" name="estado" id="estado" value="<?php echo $estado; ?>" placeholder="Seu Estado" required/>
+                </div>
+                <div class="campoNome">
+                    <label for="email">E-mail *</label>
+                    <input type="email" name="email" id="email" value="<?php echo $email; ?>" placeholder="exemplo@email.com" required/>
+                </div>
+                <div class="campoNome">
+                    <label for="telefone">Telefone *</label><label></label>
+                    <input type="text" name="telefone" id="telefone" value="<?php echo $telefone; ?>"
+                    placeholder="(47) 99999-0000" onkeypress="mascara(this)" onkeyup="somenteNumeros(this)" minlength="15" maxlength="15" required/>
+                </div>
+                <input class="campoSalvar" type="submit" value="Salvar">
+            </form>
         </section>   
         <section class="agendaSection"> 
             <h2  class="agendaTitulo">Agenda</h2>
